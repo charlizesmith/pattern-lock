@@ -214,7 +214,7 @@ class PatternLockView : GridLayout {
     private fun setupCells() {
         for(i in 0..(plvRowCount-1)) {
             for(j in 0..(plvColumnCount-1)) {
-                var cell = Cell(context, i * plvColumnCount + j,
+                var cell = Cell(context, i * plvColumnCount + j+1,
                         regularCellBackground, regularDotColor, regularDotRadiusRatio,
                         selectedCellBackground, selectedDotColor, selectedDotRadiusRatio,
                         errorCellBackground, errorDotColor, errorDotRadiusRatio,
